@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Adeel Gauri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class= "bg-gradient-to-r from-blue-400 to-indigo-600 flex items-center justify-center min-h-screen">
+
+	
+<!--      <h1>Welcome to the Weather Web App</h1>
+    
+    <h2>Technologies Used: </h2> <p>HTML, CSS, JS, Java, Servlet, JSP, OpenWeather API</p>
+     <form action="WeatherAppServlet" method="post">
+            <input  name="city"/>
+            <button >Search</i></button>
+      </form>  
+        
+	-->
+ 
+ <div class="bg-white rounded-lg shadow-lg p-10 max-w-sm w-full text-center">
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to the Weather App</h1>
+    
+    <!-- Instruction -->
+    <p class="text-gray-600 mb-6">Enter a city name to check the weather</p>
+    
+    <!-- Form for City Name and Search Button -->
+    <form class="flex flex-col items-center space-y-4" action="WeatherAppServlet" method="post">
+      <!-- Input for City Name -->
+      <input
+      	name = "city"
+        type="text"
+        placeholder="City Name"
+        class="w-full px-4 py-2 rounded-lg border border-gray-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+      
+      <!-- Search Button -->
+      <button
+        type="submit"
+        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg shadow-md transition duration-300 ease-in-out"
+      >
+        Search
+      </button>
+    </form>
+    
+    <!-- Placeholder for Weather Info -->
+    <div class="mt-8">
+      <p class="text-lg text-gray-500">Weather information will appear here.</p>
+    </div>
+  </div>
+ 
+</body>
+</html>
