@@ -48,7 +48,7 @@ public class WeatherAppServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String apiKey = "874de0c01da8f82ec9cb414f859be6d3";
+		String apiKey = "Here enter your api";
 
 		String city = request.getParameter("city");
 
